@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/React_Portfolio_App/static/css/main.073c9b0a.css",
-    "main.js": "/React_Portfolio_App/static/js/main.12a14fd8.js",
+    "main.js": "/React_Portfolio_App/static/js/main.27efb8f8.js",
     "static/js/787.30237536.chunk.js": "/React_Portfolio_App/static/js/787.30237536.chunk.js",
     "static/media/profile.jpg": "/React_Portfolio_App/static/media/profile.13f3eb3ff5d6ee7e14fd.jpg",
     "static/media/code1.jpg": "/React_Portfolio_App/static/media/code1.040739abd6fa96caec4d.jpg",
+    "static/media/github.png": "/React_Portfolio_App/static/media/github.9e094d235b4caa7c31fc.png",
+    "static/media/linkedin.png": "/React_Portfolio_App/static/media/linkedin.41a23f98c77f41c13b8e.png",
     "index.html": "/React_Portfolio_App/index.html",
     "main.073c9b0a.css.map": "/React_Portfolio_App/static/css/main.073c9b0a.css.map",
-    "main.12a14fd8.js.map": "/React_Portfolio_App/static/js/main.12a14fd8.js.map",
+    "main.27efb8f8.js.map": "/React_Portfolio_App/static/js/main.27efb8f8.js.map",
     "787.30237536.chunk.js.map": "/React_Portfolio_App/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.12a14fd8.js"
+    "static/js/main.27efb8f8.js"
   ]
 }
