@@ -1,10 +1,9 @@
 import React from 'react';
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineItem, {timelineItemClasses} from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
@@ -19,18 +18,15 @@ export default function ExperienceTimeline(props : IExperienceTimelineProps) {
   const {experiences} = props ;
 
   return (
-    <Timeline position="alternate">
+    <Timeline position="right" sx={{
+      [`& .${timelineItemClasses.root}:before`]: {
+        flex: 0,
+        padding: 0,
+      },
+    }}>
       {
         experiences.map((experience, index)=>(
           <TimelineItem key={index}>
-            <TimelineOppositeContent
-              sx={{ m: 'auto 0' }}
-              align="right"
-              variant="body2"
-              color="text.secondary"
-            >
-              {experience.duration}
-            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot>
@@ -42,7 +38,8 @@ export default function ExperienceTimeline(props : IExperienceTimelineProps) {
               <Typography variant="h6" component="span">
                 {experience.position}
               </Typography>
-              <Typography variant='body2'>{experience.company}</Typography>
+              <Typography variant='body1'>{experience.company}</Typography>
+              <Typography variant='body2'>{experience.duration}</Typography>
             </TimelineContent>
           </TimelineItem>
         ))

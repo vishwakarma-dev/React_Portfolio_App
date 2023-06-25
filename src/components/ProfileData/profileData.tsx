@@ -9,13 +9,13 @@ export const profile ={
     "experiences": [
         {
             "position": "Application Engineer",
-            "company": "Kh Infinite Possibilities Private Limited",
+            "company": "Kh Infinite Possibilities Private Limited, Pune",
             "duration": "Jan 2023 - Present",
             "description": ""
         },
         {
             "position": "Graduate Trainee",
-            "company": "Kh Infinite Possibilities Private Limited",
+            "company": "Kh Infinite Possibilities Private Limited, Pune",
             "duration": "Aug 2022 - Dec 2023",
             "description": ""
         }
@@ -70,3 +70,5 @@ export const profile ={
         "github": "https://github.com/Shadow200017"
     }
 }
+
+

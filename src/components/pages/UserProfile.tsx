@@ -30,8 +30,8 @@ export function UserProfile (props: IUserProfileProps) {
 
   return (
     <React.Fragment>
-      <Container maxWidth='sm'>
-        <Box mt={4} >
+      <Container maxWidth='md'>
+        <Box mt={4}  >
           <Card elevation={8} sx={{padding:3.5}}>
             <CardMedia
             sx={{ height: 140 }}
@@ -41,7 +41,7 @@ export function UserProfile (props: IUserProfileProps) {
             <CardContent>
               <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'} alignItems={'center'} paddingLeft={5} paddingRight={5}>
                 <Box component={'div'}>
-                  <Fab sx={{height:120, width:120}}>
+                  <Fab sx={{height:120, width:120}} color='error'>
                     <Avatar sx={{ height:'95%', width:'95%'}}
                     alt = "Vaibhav Satokar"
                     src = {VSProfile}
@@ -115,7 +115,7 @@ export function UserProfile (props: IUserProfileProps) {
             </CardContent>
           </Card>
         </Box> */}
-        <Footer />
+        <Footer contactInfo={contacts} />
       </Container>
     </React.Fragment>
   );
