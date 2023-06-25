@@ -30,7 +30,7 @@ export function UserProfile (props: IUserProfileProps) {
 
   return (
     <React.Fragment>
-      <Container maxWidth='md'>
+      <Container maxWidth='sm'>
         <Box mt={4} >
           <Card elevation={8} sx={{padding:3.5}}>
             <CardMedia
@@ -39,7 +39,7 @@ export function UserProfile (props: IUserProfileProps) {
             title="Card Header" 
             />
             <CardContent>
-              <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'} alignItems={'center'} paddingLeft={9} paddingRight={9}>
+              <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'} alignItems={'center'} paddingLeft={5} paddingRight={5}>
                 <Box component={'div'}>
                   <Fab sx={{height:120, width:120}}>
                     <Avatar sx={{ height:'95%', width:'95%'}}
@@ -77,7 +77,7 @@ export function UserProfile (props: IUserProfileProps) {
           </Card>
         </Box>
         <Box mt={3.5}>
-          <Card elevation={8} sx={{padding:4}}> 
+          <Card elevation={8} sx={{padding:2}}> 
             <CardContent>
               <Typography align='center' fontFamily={'Algar'} fontWeight={600}  variant="h4" gutterBottom>
                     Experience
@@ -88,7 +88,7 @@ export function UserProfile (props: IUserProfileProps) {
           </Card>
         </Box>
         <Box mt={3.5}>
-          <Card elevation={8} sx={{padding:4}}> 
+          <Card elevation={8} sx={{padding:2}}> 
             <CardContent>
               <Typography align='center' fontFamily={'Algar'} fontWeight={600}  variant="h4" gutterBottom>
                     Education
